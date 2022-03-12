@@ -24,3 +24,13 @@ const objectArr:User[] = [{id:1,name:"Hai"},{id:2,name:"Hải"}];
  * outDir: "./dist
  *  "sourceMap": true,  
  */
+type Product = {
+    id:number,
+    name: string
+}
+const getProduct = <T extends Product> (products: T[]) => {
+    const result = products.map(item => `<div> ${item.name} </div>`)
+   
+    
+}
+getProduct([{id:1,name:"A"}, {id:2,name:"B"}]);

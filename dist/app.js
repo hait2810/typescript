@@ -8,12 +8,8 @@ const myObj = {};
 const numberArr = [1, 2, 3, 4];
 const stringArr = ["Hai", "A"];
 const objectArr = [{ id: 1, name: "Hai" }, { id: 2, name: "Hải" }];
-// tsc -w tên file
-/**
- * tsc --init
- * target: "es2018"
- * baseUrl: "./src"
- * outDir: "./dist
- *  "sourceMap": true,
- */ 
+const getProduct = (products) => {
+    const result = products.map(item => `<div> ${item.name} </div>`);
+};
+getProduct([{ id: 1, name: "A" }, { id: 2, name: "B" }]);
 //# sourceMappingURL=app.js.map
